@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack src/index.js --output bin/app.js -d --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/carnationcrab/mithril-spike/issues"
   },
-  "homepage": "https://github.com/carnationcrab/mithril-spike#readme"
+  "homepage": "https://github.com/carnationcrab/mithril-spike#readme",
+  "dependencies": {
+    "mithril": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
 }
